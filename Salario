@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std ;
+void main()
+{ int salariobruto,impuesto,afp,salarioneto;
+  cout<< "Ingrese el salario bruto: " ;
+  cin>> salariobruto;
+  if (salariobruto>2800) 
+   {impuesto =salariobruto*0.13 ;
+   
+    if  (salariobruto>4000)
+      afp= salariobruto*01271;
+    else 
+      afp=0;
+   }
+
+   else
+    {impuesto=0 ;
+     afp= 0 ;
+    }
+   salarioneto=salariobruto-impuesto-afp;
+   cout<< "El salario neto del trabajador es: ";
+   cout<<salarioneto<<"\n\n";
+   cout<<"El impuesto del trabajador es: ";
+   cout<<impuesto<<"\n\n";
+   cout<<"La afp del trabajador es: ";
+   cout<<afp<<"\n\n";
+   getch(); 
+}
+
+
