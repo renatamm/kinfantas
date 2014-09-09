@@ -1,0 +1,43 @@
+// renata.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std; 
+
+void main()
+{
+	float a, b, c, D, x1, x2, xr, xi ;
+	cout<< "Ingrese el valor de a: " ;
+    cin>> a; 
+	cout<< "Ingrese el valor de b: ";
+    cin>> b;
+	cout<< "Ingrese el valor de c: " ;
+    cin>> c;
+
+	D=b*b-4*a*c ;
+    if (D>0)
+	{
+		    x1=(-b+sqrt(D))/(2*a) ;
+		    x2=(-b-sqrt(D))/(2*a) ;
+		    cout<<"x1= " <<x1 ;
+		    cout<<"x2= " <<x2 ;
+	}
+	else 
+	{
+		if (D<0)
+		{   xr=-b/(2*a);
+			xi=sqrt(-(D));
+			cout<<"x1= " <<xr<<" +"<<xi<<"i" ;
+			cout<<"x2= " <<xr<<"-" <<xi<"i" ;
+
+          }  
+
+}
+getch();
+			}
+
+
