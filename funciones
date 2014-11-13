@@ -1,0 +1,60 @@
+
+
+(Sin asunto)
+Acciones  
+Renata   11/11/2014   Conservar este mensaje en la parte superior de la bandeja de entrada  
+Para: Renata
+
+// renata.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+int factorial (int N);
+float potencia (float x, float y);
+
+void main()
+{ 
+    float base,s;
+    int exponente ,f,n;
+
+    cout<<"Ingrese el numero para calcular la serie: ";
+    cin>>n;
+    cout<<"Ingrese el valor de x: ";
+    cin>>base;
+
+    s=0;
+
+    for( int i=2;i<=n;i++)
+
+       s=s+potencia(base,i)/factorial(i);
+    
+    cout<<"La suma es igual a : "<<s;
+    
+
+    getch();
+
+}   
+
+ int factorial (int N)
+  
+ {  int i,P=1;
+    for (i=2;i<=N;i++)
+    P=P*i;
+
+ return P;
+ }
+
+ float potencia (float x, float y)
+ { 
+     float pot;
+     pot=1;
+     for(int i=1;i<=y;i++)
+     pot=pot*x;
+
+     return pot;
+
+ }
