@@ -1,0 +1,27 @@
+// num naturaless.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+
+void main()
+{int i, n;
+cout<< "ingrese numero";
+cin>> n;
+
+for(i=2;i<=n;i=i+2)
+cout<<i<<"\t";
+
+i=2;
+cout<<"\n" ;
+while(i<=n)
+{cout<<i<<"\t";
+i=i+2;
+}
+getch();
+
+}
